@@ -2,6 +2,12 @@
 
 Prepared for Anthony Miller's Treasury take-home submission.
 
+## Live prototype
+
+https://treasury-label-review-anthony-miller.streamlit.app/
+
+Hosted on Streamlit Community Cloud from this repository's `main` branch, using `app.py`. Live smoke testing confirmed image upload, OCR, four sample field matches, and a review flag for a missing warning. The sample OCR runtime was 0.39 seconds; this is not a representative performance benchmark.
+
 A standalone, human-in-the-loop prototype for comparing OCR-extracted alcohol label text against values entered from a label application. **This is not an official TTB tool, does not connect to COLA, and never approves or rejects a label.**
 
 ## Features
@@ -46,7 +52,7 @@ python -m pytest -q
 3. `requirements.txt` installs Python dependencies and `packages.txt` installs Tesseract on supported Debian-based builds.
 4. Deploy and test with a sample label. Copy the resulting public URL for the assignment submission.
 
-**Important:** The deployed URL must be created in your own hosting account; it is not included in this downloadable project. Confirm the hosting environment's terms and data handling before uploading anything sensitive.
+The live prototype is deployed at the URL above. Use nonsensitive demonstration labels when testing.
 
 ## Architecture and tools
 
